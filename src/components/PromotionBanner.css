@@ -1,0 +1,54 @@
+/* PromotionBanner.css */
+.promotion-banner {
+  background: linear-gradient(135deg, #ff7b54, #ff3d3d);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 90%;
+}
+
+.promotion-content {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.promotion-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.promotion-description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.shop-now-button {
+  background-color: white;
+  color: #ff3d3d;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.shop-now-button:hover {
+  background-color: #ff3d3d;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

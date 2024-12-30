@@ -1,0 +1,146 @@
+/* SellDeviceForm.css */
+
+.sell-device-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.sell-device-form {
+  flex: 0 0 40%;
+ min-width: 400px;
+  margin: 0;
+  background: #d1cece;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.sell-device-form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.buttonsell {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.buttonsell:hover {
+  background-color: #0056b3;
+}
+
+.image-preview {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.image-preview img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .sell-device-form {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+.sell-device-banner {
+  flex: 0 0 40%;
+  max-width: 40%;
+  background: linear-gradient(135deg, #6366f1 0%, #3b82f6 100%);
+  color: white;
+  padding: 4rem;
+  border-radius: 2rem;
+  position: sticky;
+  min-width: 400px;
+  top: 2rem;
+  height: fit-content;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.sell-device-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.banner-feature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.banner-feature i {
+  font-size: 2rem;
+}
+
+.banner-feature p {
+  margin: 0;
+  font-size: 2.3rem;
+}
+  

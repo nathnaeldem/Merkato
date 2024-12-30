@@ -1,0 +1,149 @@
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('./Shopping-Cart.png') no-repeat center center/cover;
+    background-size: cover;
+    color: #fff;
+    overflow: hidden;
+    z-index: 0; /* Ensure hero is behind other content */
+}
+
+.hero-content {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+    padding: 0 20px;
+    z-index: 1; /* Make sure content within hero is above the background */
+}
+
+.hero-title {
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: linear-gradient(to right, #ff6f61, #ff3b2e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: #e0e0e0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-primary {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-primary:hover {
+    background-color: #ff3b2e;
+    transform: translateY(-5px);
+}
+
+.cta-secondary {
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border: 2px solid #ff6f61;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s, background-color 0.3s;
+}
+
+.cta-secondary:hover {
+    background-color: #ff6f61;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.9));
+    transform: rotate(-20deg);
+    z-index: -1; /* Ensure the overlay stays behind the content */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero {
+        background-position: center;
+        background-size: cover;
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cta-primary, .cta-secondary {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .cta-primary, .cta-secondary {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

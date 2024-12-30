@@ -1,0 +1,83 @@
+/* OfferForm.css */
+.offer-form {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .offer-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .offer-form label {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .offer-form label input,
+  .offer-form label textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .offer-form label textarea {
+    resize: none;
+  }
+  
+  .offer-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #218cf0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .offer-form button:hover {
+    background-color: #1386d8;
+  }
+  .image-upload-slots {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .image-slot {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .selected-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  
+  .selected-image button {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .selected-image button:hover {
+    background-color: #cc0000;
+  }

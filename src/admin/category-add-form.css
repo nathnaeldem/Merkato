@@ -1,0 +1,100 @@
+/* category-add-form.css */
+
+/* General Styling */
+.category-add-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .category-add-form__header {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styling */
+  .category-add-form__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .category-add-form__input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .category-add-form__label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .category-add-form__input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .category-add-form__input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 3px rgba(76, 175, 80, 0.5);
+  }
+  
+  /* Button Styling */
+  .category-add-form__button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-add-form__button:hover {
+    background-color: #45a049;
+  }
+  
+  .category-add-form__button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Message Styling */
+  .category-add-form__message {
+    text-align: center;
+    font-size: 14px;
+    color: #d32f2f;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .category-add-form {
+      padding: 15px;
+    }
+  
+    .category-add-form__header {
+      font-size: 20px;
+    }
+  
+    .category-add-form__input {
+      font-size: 14px;
+    }
+  
+    .category-add-form__button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
